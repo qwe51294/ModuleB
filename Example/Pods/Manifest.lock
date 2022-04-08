@@ -1,0 +1,16 @@
+PODS:
+  - ModuleB (0.1.0)
+
+DEPENDENCIES:
+  - ModuleB (from `../`)
+
+EXTERNAL SOURCES:
+  ModuleB:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ModuleB: cd9301549631249bb36d19b05c2f72dca309beae
+
+PODFILE CHECKSUM: 93f2d5d12693ec7f200ae510eaba425e58214bcd
+
+COCOAPODS: 1.11.2
