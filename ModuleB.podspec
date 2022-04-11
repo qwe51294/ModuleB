@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://gitee.com/luckyc_580/module-b'
+  s.homepage         = 'https://github.com/chenbofan/ModuleB'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'qwe51294' => '422386853@qq.com' }
-  s.source           = { :git => 'https://gitee.com/luckyc_580/module-b.git', :tag => s.version.to_s }
+  s.author           = { 'chenbofan' => 'chenbofan@bkex.team' }
+  s.source           = { :git => 'https://github.com/chenbofan/ModuleB.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
@@ -38,5 +38,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'AFNetworking', '~> 2.3'
+  # s.dependency 'AFNetworking', '~> 2.3'
 end
