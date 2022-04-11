@@ -80,37 +80,3 @@ extension Array {
 
 }
 
-extension Array {
-    func pinYinFirstLetterFormat() -> [[String: Any]] {
-        guard count > 0 else {return []}
-        guard let arr = self as? [String] else {return []}
-        var dict: [String: [String]] = [:]
-        for str in arr {
-            var firstLetter = str.subString(start: 0, length: 1)
-            if firstLetter < "A" || firstLetter > "Z" {
-                firstLetter = "#"
-            }
-            var tmpArr = dict[firstLetter]
-            if tmpArr == nil {
-                tmpArr = []
-            }
-            tmpArr?.append(str)
-            dict[firstLetter] = tmpArr
-        }
-        var returnArr: [[String: Any]] = []
-        for key in dict.keys.sorted().filter({$0 != "#"}) {
-            var tmpDict: [String: Any] = [:]
-            tmpDict["firstLetter"] = key
-            tmpDict["content"] = dict[key]
-            returnArr.append(tmpDict)
-        }
-        if let arr = dict["#"], arr.count > 0 {
-            var tmpDict: [String: Any] = [:]
-            tmpDict["firstLetter"] = "#"
-            tmpDict["content"] = dict["#"]
-            returnArr.append(tmpDict)
-        }
-        
-        return returnArr
-    }
-}
