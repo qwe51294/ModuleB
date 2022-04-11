@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/chenbofan/ModuleB'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'chenbofan' => 'chenbofan@bkex.team' }
+  s.author           = { 'qwe51294' => '422386853@qq.com' }
   s.source           = { :git => 'https://github.com/chenbofan/ModuleB.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
